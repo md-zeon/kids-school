@@ -50,6 +50,18 @@
     --card-bg-primary: linear-gradient(to bottom, #DEF5FF 40%, #ffffff00);
     --card-bg-secondary: linear-gradient(to bottom, #FFF4DC 40%, #ffffff00);
     --card-bg-accent: linear-gradient(to bottom, #EEE1FF 40%, #FFFFFF00);
+    
+
+    /* Font Sizes */
+
+    --font-size-xxl: 3.5rem; /* 56px */
+    --font-size-xl: 2.875rem; /* 46px */
+    --font-size-lg: 2rem; /* 32px */
+    --font-size-md: 1.5rem; /* 24px */
+    --font-size-sm: 1.25rem; /* 20px */
+    --font-size-xs: .9375rem; /* 15px */
+
+    
 }
 
 .font-quicksand {
