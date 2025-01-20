@@ -1,20 +1,65 @@
 /* Google Font: QuickSand, RaleWay */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* 
+========================================
+--------------Shared Styles-------------
+========================================
+*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+
+	/* nav links colors */
+	--color-primary-orange: #fea301;
+	--color-primary-blue: #01acfd;
+	--color-primary-dark-teal: #05d4df;
+	--color-primary-purple: #5d58ef;
+
+	/* text colors */
+	--color-secondary-dark: #111111;
+	--color-secondary-gray: #202020;
+	--color-secondary-neutral: #808080;
+
+	/* card link colors */
+	--color-accent-lightblue: #64c8ff;
+	--color-accent-yellow: #f0aa00;
+	--color-accent-purple: #8700ff;
+
+	--color-neutral-black: #000000;
+	--color-neutral-white: #ffffff;
+
+    /* background colors */
+    --bg-primary: linear-gradient(to top, #FEA301, #FFFFFF);
+    --bg-secondary: #01ACFD;
+
+	/* button background colors */
+	--button-bg-primary: #fea301;
+	--button-bg-secondary: #111111;
+	--button-bg-green: #95b226;
+	--button-bg-purple: #5d58f0;
+	--button-bg-teal: #3cd8e8;
+
+    /* card bg */
+    --card-bg-primary: linear-gradient(to bottom, #DEF5FF 40%, #ffffff00);
+    --card-bg-secondary: linear-gradient(to bottom, #FFF4DC 40%, #ffffff00);
+    --card-bg-accent: linear-gradient(to bottom, #EEE1FF 40%, #FFFFFF00);
 }
 
 .font-quicksand {
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+	font-family: "Quicksand", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
 }
 
 .font-raleway {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+	font-family: "Raleway", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
 }
