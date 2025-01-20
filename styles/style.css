@@ -60,8 +60,6 @@
     --font-size-md: 1.5rem; /* 24px */
     --font-size-sm: 1.25rem; /* 20px */
     --font-size-xs: .9375rem; /* 15px */
-
-    
 }
 
 .font-quicksand {
@@ -74,4 +72,90 @@
 	font-family: "Raleway", serif;
 	font-optical-sizing: auto;
 	font-style: normal;
+}
+
+
+.display-flex {
+    display: flex;
+}
+
+.text-primary {
+    color: var(--color-primary-orange);
+}
+
+.text-secondary {
+    color: var(--color-primary-blue);
+}
+
+.text-teal {
+    color: var(--color-primary-dark-teal);
+}
+
+.text-purple {
+    color: var(--color-primary-purple);
+}
+
+.btn {
+    color: var(--color-neutral-white);
+    font-size: var(--font-size-sm);
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 10px 80px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-primary {
+    background-color: var(--button-bg-primary);
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--color-primary-orange);
+    border: 1px solid var(--color-primary-orange);
+}
+
+/* 
+========================================
+--------------Navbar Styles-------------
+========================================
+*/
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.navbar,
+.brand, 
+.nav-links {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    margin: 20px 0;
+    /* border: 1px solid gray; */
+}
+
+.logo {
+    color: var(--color-secondary-dark);
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.nav-links {
+    margin: 16px 0;
+    gap: 32px;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
 }
