@@ -1,12 +1,7 @@
-### WELCOME TO ASSIGNMENT-002
+### ASSIGNMENT-002
 
 # <img width=30 src="./assets/logo.png"/> Kids-School
 
-## **📅 Deadline For 60 marks**: 22th January , 2025 ( 11:59 pm ⏱️)
-
-## **📅 Deadline For 50 marks**: 23th January , 2025 ( 11:59 pm ⏱️)
-
-**📅 Deadline For 30 marks**: Any time after 23th January.
 
 ## Requirements (50)
 
