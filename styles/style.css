@@ -246,7 +246,7 @@ section {
 
     .btn {
         font-size: var(--font-size-xs);
-        padding: 6px 24px;
+        padding: 10px 24px;
         border-radius: 8px;
     }
 
@@ -344,5 +344,33 @@ section {
 
     .hamburger-icon {
         display: none;
+    }
+
+    /* 
+    ========================================
+    ---------Banner Styles Tablet-----------
+    ========================================
+    */
+
+    .banner {
+        gap: 24px;
+    }
+
+    .banner-content {
+        gap: 18px;
+    }
+
+    .banner-img {
+        flex-basis: calc(45% - 24px - 20px);
+    }
+    
+    .banner-title {
+        font-size: var(--font-size-lg);
+        line-height: 40px;
+    }
+
+    .banner-description {
+        font-size: var(--font-size-xs);
+        font-weight: 500;
     }
 }
