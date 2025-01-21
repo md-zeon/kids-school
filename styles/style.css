@@ -863,4 +863,46 @@ footer {
         max-width: 100%;
         grid-column: span 2;
     } 
+
+    /* 
+    ========================================
+    ---------Footer Styles Tablet-----------
+    ========================================
+    */
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        padding: 80px 16px 120px 16px;
+        gap: 40px;
+    }
+
+    .left-footer {
+        grid-column: span 2;
+    }
+
+    .footer-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .footer-description {
+        max-width: 85%;
+        font-size: var(--font-size-xs);
+    }
+
+    .footer-sub-title {
+        font-size: var(--font-size-sm);
+        margin-bottom: 24px;
+    }
+
+    .footer-links {
+        gap: 14px;
+    }
+
+    .footer-link {
+        font-size: var(--font-size-xs);
+    }
+
+    .footer-social-links {
+        gap: 8px;
+    }
 }
