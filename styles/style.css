@@ -737,4 +737,25 @@ section {
         height: 40px;
         font-size: var(--font-size-sm);
     }
+
+    /* 
+    ========================================
+    ------Story Section Styles Tablet-------
+    ========================================
+    */
+
+    .stories {
+        gap: 40px;
+    }
+    
+    .story-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .story-card {
+        max-width: 100%;
+        grid-column: span 2;
+    } 
 }
