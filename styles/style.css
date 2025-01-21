@@ -454,6 +454,67 @@ section {
 
 /* 
 ========================================
+------------Footer Styles---------------
+========================================
+*/
+
+footer {
+    background-color: var(--bg-secondary);
+    color: var(--color-neutral-white);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 48% repeat(2, 1fr);
+    padding-top: 123px;
+    padding-bottom: 174px;
+}
+
+.left-footer-content {
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+}
+
+.footer-description {
+    max-width: 400px;
+    font-size: var(--font-size-sm);
+    margin-left: 7px;
+    margin-top: 35px;
+}
+
+.footer-sub-title {
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.footer-links {
+    gap: 20px;
+    flex-direction: column;
+}
+
+.footer-link-item {
+    list-style: none;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--color-neutral-white);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
+
+.footer-social-links {
+    gap: 10px;
+}
+
+/* 
+========================================
 -----------Responsive Mobile------------
 ========================================
 */
