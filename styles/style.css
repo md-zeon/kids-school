@@ -670,6 +670,50 @@ footer {
         font-weight: 700;
         color: var(--color-neutral-black);
     }
+
+    /* 
+    ========================================
+    ---------Footer Styles Mobile-----------
+    ========================================
+    */
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 40px 16px 60px 16px;
+        gap: 32px;
+    }
+
+    .left-footer-content {
+        gap: 8px;
+    }
+
+    .footer-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .footer-description {
+        font-size: var(--font-size-xs);
+        margin-left: 5px;
+        margin-top: 22px;
+    }
+
+    .footer-sub-title {
+        font-size: var(--font-size-sm);
+        font-weight: 600;
+        margin-bottom: 28px;
+    }
+
+    .footer-links {
+        gap: 16px;
+    }
+
+    .footer-link {
+        font-size: var(--font-size-xs);
+    }
+
+    .footer-social-links {
+        gap: 8px;
+    }
 }
 
 /* 
