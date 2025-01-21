@@ -240,25 +240,6 @@ section {
     color: var(--color-secondary-dark);
 }
 
-/* 
-========================================
---------------Marquee Styles-------------
-========================================
-*/
-
-.marquee-container {
-    background-color: #f0f8ff;
-    color: var(--color-secondary-dark);
-    font-size: var(--font-size-sm);
-    padding: 20px 0;
-    border-top: 1px solid var(--color-primary-blue); 
-    border-bottom: 1px solid var(--color-primary-blue);
-    font-weight: 500;
-}
-
-.marquee-container span {
-    font-weight: 700;
-}
 
 /* 
 ========================================
@@ -296,6 +277,27 @@ section {
 .banner-description {
     font-size: var(--font-size-sm);
     color: var(--color-secondary-dark);
+}
+
+
+/* 
+========================================
+--------------Marquee Styles-------------
+========================================
+*/
+
+.marquee-container {
+    background-color: #f0f8ff;
+    color: var(--color-secondary-dark);
+    font-size: var(--font-size-sm);
+    padding: 20px 0;
+    border-top: 1px solid var(--color-primary-blue); 
+    border-bottom: 1px solid var(--color-primary-blue);
+    font-weight: 500;
+}
+
+.marquee-container span {
+    font-weight: 700;
 }
 
 /* 
@@ -615,6 +617,22 @@ footer {
 
     /* 
     ========================================
+    ---------Marquee Styles Mobile----------
+    ========================================
+    */
+
+    .marquee-container {
+        font-size: var(--font-size-xs);
+        padding: 15px 0;
+        font-weight: 400;
+    }
+
+    .marquee-container span {
+        font-weight: 600;
+    }
+
+    /* 
+    ========================================
     -------Curriculum Styles Mobile---------
     ========================================
     */
@@ -675,7 +693,7 @@ footer {
     
     .date-btn {
         left: 22px;
-        bottom: -11px;
+        bottom: -15px;
         font-size: var(--font-size-xxs);
         padding: 5px 10px;
     }
@@ -815,6 +833,16 @@ footer {
     .banner-description {
         font-size: var(--font-size-xs);
         font-weight: 500;
+    }
+
+    /* 
+    ========================================
+    ---------Marquee Styles Tablet----------
+    ========================================
+    */
+
+    .marquee-container {
+        padding: 18px 0;
     }
 
     /* 
