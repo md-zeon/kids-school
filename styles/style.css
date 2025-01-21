@@ -568,6 +568,47 @@ section {
     .btn-container {
         display: none;
     }
+
+    /* 
+    ========================================
+    ------Story Section Styles Mobile-------
+    ========================================
+    */
+    .stories {
+        gap: 20px;
+    }
+    
+    .story-card-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .story-card {
+        display: none;
+    }
+    
+    .date-btn {
+        left: 22px;
+        bottom: -11px;
+        font-size: var(--font-size-xxs);
+        padding: 5px 10px;
+    }
+
+    .card-img-container img {
+        border-radius: 9px 9px 0 0;
+    }
+
+    .story-sub-card {
+        border-radius: 9px;
+    }
+    
+    .story-sub-card-title {
+        padding: 25px 22px;
+        font-size: var(--font-size-xs);
+        font-weight: 700;
+        color: var(--color-neutral-black);
+    }
 }
 
 /* 
