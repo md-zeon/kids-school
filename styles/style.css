@@ -66,6 +66,7 @@
     --font-size-md: 24px; /* 24px */
     --font-size-sm: 20px; /* 20px */
     --font-size-xs: 15px; /* 15px */
+    --font-size-xxs: 10px; /* 10px */
 }
 
 
@@ -286,6 +287,7 @@ section {
     border-radius: 18px;
     max-width: 370px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .curriculum-card:nth-child(1) {
@@ -361,6 +363,14 @@ section {
         padding: 10px 24px;
         border-radius: 8px;
     }
+    
+    section {
+        padding: 40px 16px;
+    }
+
+    .section-title {
+        font-size: var(--font-size-md);
+    }
 
     /* 
     ========================================
@@ -409,6 +419,46 @@ section {
     .banner-description {
         font-size: var(--font-size-xs);
         font-weight: 500;
+    }
+
+    /* 
+    ========================================
+    -------Curriculum Styles Mobile---------
+    ========================================
+    */
+
+    .curriculum {
+        gap: 20px;
+    }
+
+    .curriculum-card-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .curriculum-card {
+        max-width: 90%;
+        width: 100%;
+        gap: 22px;
+    }
+
+    .curriculum-card-title {
+        font-size: 1rem;
+    }
+    
+    .curriculum-card-description {
+        max-width: 200px;
+        margin: 0 auto;
+        line-height: 20px;
+        font-size: var(--font-size-xxs);
+    }
+
+    .link-btn {
+        font-size: var(--font-size-xxs);
+    }
+
+    .btn-container {
+        display: none;
     }
 }
 
