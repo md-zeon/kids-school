@@ -375,6 +375,11 @@ section {
     font-weight: 700;
     line-height: 28px;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+.link-btn:hover {
+    transform: scale(1.05);
 }
 
 .btn-container {
@@ -505,6 +510,11 @@ footer {
 .left-footer-content {
     align-items: center;
     gap: 10px;
+}
+
+.footer-logo {
+    width: 100%;
+    cursor: pointer;
 }
 
 .footer-title {
