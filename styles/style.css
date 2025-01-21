@@ -32,6 +32,7 @@
 	--color-accent-yellow: #f0aa00;
 	--color-accent-purple: #8700ff;
 
+    /* body colors */
 	--color-neutral-black: #000000;
 	--color-neutral-white: #ffffff;
 
@@ -48,10 +49,14 @@
 	--button-bg-teal: #3cd8e8;
 
     /* card bg */
-    --card-bg-primary: linear-gradient(to bottom, #DEF5FF 40%, #ffffff00);
-    --card-bg-secondary: linear-gradient(to bottom, #FFF4DC 40%, #ffffff00);
-    --card-bg-accent: linear-gradient(to bottom, #EEE1FF 40%, #FFFFFF00);
-    
+    --card-bg-primary: linear-gradient(to top, rgba(255, 255, 255, 0) 40%, #DEF5FF);
+    --card-bg-secondary: linear-gradient(to top, rgba(255, 255, 255, 0) 40%, #FFF4DC);
+    --card-bg-accent: linear-gradient(to top, rgba(255, 255, 255, 0) 40%, #EEE1FF);
+
+    /* card border */
+    --card-border-primary: 1px solid #DEF5FF;
+    --card-border-secondary: 1px solid #FFF4DC;
+    --card-border-accent: 1px solid #EEE1FF;
 
     /* Font Sizes */
 
@@ -89,6 +94,14 @@ section {
     padding: 60px 20px;
 }
 
+.section-title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    text-align: center;
+    line-height: 60px;
+    color: var(--color-neutral-black);
+}
+
 .display-flex {
     display: flex;
 }
@@ -108,6 +121,20 @@ section {
 .text-purple {
     color: var(--color-primary-purple);
 }
+
+/* card link colors */
+.link-primary {
+    color: var(--color-accent-lightblue);
+} 
+
+.link-secondary {
+    color: var(--color-accent-yellow);
+}
+
+.link-accent {
+    color: var(--color-accent-purple);
+}
+
 
 .btn {
     color: var(--color-neutral-white);
@@ -236,7 +263,84 @@ section {
 ========================================
 */
 
+.curriculum {
+    gap: 80px;
+    flex-direction: column;
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+}
 
+.curriculum-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.curriculum-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 40px;
+    border-radius: 18px;
+    max-width: 370px;
+    text-align: center;
+}
+
+.curriculum-card:nth-child(1) {
+    background: var(--card-bg-primary);
+    border: var(--card-border-primary);
+}
+
+.curriculum-card:nth-child(2) {
+    background: var(--card-bg-secondary);
+    border: var(--card-border-secondary);
+}
+
+.curriculum-card:nth-child(3) {
+    background: var(--card-bg-accent);
+    border: var(--card-border-accent);
+}
+
+.curriculum-card-title {
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--color-secondary-gray);
+}
+
+.curriculum-card-description {
+    font-size: var(--font-size-xs);
+    color: var(--color-secondary-neutral);
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.link-btn {
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.btn-container {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-prev, 
+.btn-next {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    font-size: var(--font-size-md);
+    color: var(--color-neutral-white);
+    transition: 0.5s;
+}
 
 
 /* 
