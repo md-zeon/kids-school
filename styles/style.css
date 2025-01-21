@@ -38,6 +38,7 @@
     /* background colors */
     --bg-primary: linear-gradient(to top, #FEA301, #FFFFFF);
     --bg-secondary: #01ACFD;
+    --bg-body: #F7F7F7;
 
 	/* button background colors */
 	--button-bg-primary: #fea301;
@@ -60,6 +61,10 @@
     --font-size-md: 1.5rem; /* 24px */
     --font-size-sm: 1.25rem; /* 20px */
     --font-size-xs: .9375rem; /* 15px */
+}
+
+body {
+    background-color: var(--bg-body);
 }
 
 .font-quicksand {
@@ -233,7 +238,7 @@
 
     .btn {
         font-size: var(--font-size-xs);
-        padding: 10px 30px;
+        padding: 10px 40px;
         border-radius: 8px;
     }
 
