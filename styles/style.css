@@ -482,6 +482,9 @@ section {
         border-radius: 8px;
     }
 
+    .section-title {
+        font-size: var(--font-size-lg);
+    }
     /* 
     ========================================
     ---------Navbar Styles Tablet-----------
