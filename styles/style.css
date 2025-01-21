@@ -25,6 +25,7 @@
 	/* text colors */
 	--color-secondary-dark: #111111;
 	--color-secondary-gray: #202020;
+    --color-secondary-light-gray: #666666;
 	--color-secondary-neutral: #808080;
 
 	/* card link colors */
@@ -37,7 +38,7 @@
 	--color-neutral-white: #ffffff;
 
     /* background colors */
-    --bg-primary: linear-gradient(to top, #FEA301, #FFFFFF);
+    --bg-primary: linear-gradient(to top, #fea3014d, #ffffff4d);
     --bg-secondary: #01ACFD;
     --bg-body: #F7F7F7;
 
@@ -169,6 +170,21 @@ section {
     background: transparent;
 }
 
+.badge-teal {
+    border: 1px solid var(--button-bg-teal);
+    background-color: var(--button-bg-teal);
+}
+
+.badge-purple {
+    border: 1px solid var(--button-bg-purple);
+    background-color: var(--button-bg-purple);
+}
+
+.badge-green {
+    border: 1px solid var(--button-bg-green);
+    background-color: var(--button-bg-green);
+}
+
 /* 
 ========================================
 --------------Navbar Styles-------------
@@ -264,11 +280,14 @@ section {
 ========================================
 */
 
-.curriculum {
+.curriculum,
+.stories {
     gap: 80px;
     flex-direction: column;
     background-image: url('../assets/bg.png');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .curriculum-card-container {
@@ -344,6 +363,94 @@ section {
     transition: 0.5s;
 }
 
+
+/* 
+========================================
+---------Story Section Styles-----------
+========================================
+*/
+
+.stories-wrapper {
+    background: var(--bg-primary);
+}
+
+.stories {
+    align-items: center;
+}
+
+.story-card-container {
+    display: grid;
+    grid-template-columns: 45% repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 18px;
+}
+
+.story-card {
+    max-width: 540px;
+    grid-row: span 2;
+    border-radius: 16px;
+    background-color: var(--color-neutral-white);
+}
+
+.card-img-container {
+    position: relative;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.date-btn {
+    position: absolute;
+    left: 38px;
+    bottom: -20px;
+    z-index: 10;
+    font-weight: 500;
+    font-size: var(--font-size-xs);
+    line-height: 28px;
+    padding: 10px 18px;
+    border-radius: 48px;
+    color: var(--color-neutral-white);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.date-btn:hover {
+    transform: scale(1.05);
+}
+
+.story-card-content {
+    padding: 34px 38px;
+}
+
+.story-card-title {
+    font-size: var(--font-size-md);
+    line-height: 38px;
+    font-weight: 700;
+    color: var(--color-neutral-black);
+    margin-bottom: 48px;
+}
+
+.story-card-description {
+    font-size: var(--font-size-xs);
+    line-height: 28px;
+    color: var(--color-secondary-light-gray);
+}
+
+
+.story-sub-card {
+    background-color: var(--color-neutral-white);
+    border-radius: 16px;
+}
+
+.story-sub-card-title {
+    padding: 43px 54px 33px 38px;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    color: var(--color-neutral-black);
+}
 
 /* 
 ========================================
