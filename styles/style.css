@@ -55,33 +55,38 @@
 
     /* Font Sizes */
 
-    --font-size-xxl: 3.5rem; /* 56px */
-    --font-size-xl: 2.875rem; /* 46px */
-    --font-size-lg: 2rem; /* 32px */
-    --font-size-md: 1.5rem; /* 24px */
-    --font-size-sm: 1.25rem; /* 20px */
-    --font-size-xs: .9375rem; /* 15px */
+    --font-size-xxl: 56px; /* 56px */
+    --font-size-xl: 46px; /* 46px */
+    --font-size-lg: 32px; /* 32px */
+    --font-size-md: 24px; /* 24px */
+    --font-size-sm: 20px; /* 20px */
+    --font-size-xs: 15px; /* 15px */
+}
+
+
+.font-quicksand {
+    font-family: "Quicksand", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+.font-raleway {
+    font-family: "Raleway", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
 }
 
 body {
     background-color: var(--bg-body);
 }
 
-.font-quicksand {
-	font-family: "Quicksand", serif;
-	font-optical-sizing: auto;
-	font-style: normal;
-}
-
-.font-raleway {
-	font-family: "Raleway", serif;
-	font-optical-sizing: auto;
-	font-style: normal;
-}
-
 .container {
     max-width: 1160px;
     margin: 0 auto;
+}
+
+section {
+    padding: 0 20px;
 }
 
 .display-flex {
@@ -124,7 +129,16 @@ body {
 .btn-primary:hover {
     background-color: transparent;
     color: var(--color-primary-orange);
-    border: 1px solid var(--color-primary-orange);
+}
+
+.btn-secondary {
+    border: 1px solid var(--color-secondary-dark);
+    background-color: var(--button-bg-secondary);
+}
+
+.btn-secondary:hover {
+    color: var(--color-secondary-dark);
+    background: transparent;
 }
 
 /* 
@@ -135,7 +149,8 @@ body {
 
 .navbar,
 .brand, 
-.nav-links {
+.nav-links,
+.banner {
     align-items: center;
     justify-content: space-between;
 }
@@ -175,6 +190,38 @@ body {
     display: none;
     font-size: var(--font-size-lg);
     color: var(--color-secondary-dark);
+}
+
+/* 
+========================================
+--------------Banner Styles-------------
+========================================
+*/
+
+.banner {
+    gap: 50px;
+}
+
+.banner-content {
+    flex-basis: 55%;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.banner-img {
+    flex-basis: calc(45% - 50px - 40px);
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-title {
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    color: var(--color-secondary-dark);
+    line-height: 60px;
 }
 
 
@@ -220,7 +267,13 @@ body {
     .hamburger-icon {
         display: block;
     }
+    /* 
+    ========================================
+    ---------Banner Styles Mobile-----------
+    ========================================
+    */
 
+    
 }
 
 /* 
