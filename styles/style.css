@@ -149,6 +149,7 @@ section {
 .btn {
     color: var(--color-neutral-white);
     font-size: var(--font-size-sm);
+    font-family: "Quicksand", "Raleway", serif;
     border-radius: 12px;
     font-weight: 600;
     padding: 10px 80px;
@@ -554,6 +555,10 @@ footer {
     color: var(--color-neutral-white);
     font-size: var(--font-size-sm);
     font-weight: 500;
+}
+
+.footer-link:hover {
+    font-weight: 600;
 }
 
 .footer-social-links {
