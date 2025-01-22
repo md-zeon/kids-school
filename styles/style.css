@@ -54,6 +54,10 @@
     --card-bg-secondary: linear-gradient(to top, rgba(255, 255, 255, 0) 40%, #FFF4DC);
     --card-bg-accent: linear-gradient(to top, rgba(255, 255, 255, 0) 40%, #EEE1FF);
 
+    /* Card Shadow */
+    --inner-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05) inset;
+
+
     /* card border */
     --card-border-primary: 1px solid #DEF5FF;
     --card-border-secondary: 1px solid #FFF4DC;
@@ -339,6 +343,7 @@ section {
     max-width: 370px;
     text-align: center;
     margin: 0 auto;
+    box-shadow: var(--inner-shadow);
 }
 
 .curriculum-card:nth-child(1) {
